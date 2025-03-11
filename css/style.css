@@ -39,12 +39,33 @@ body {
     align-items: center;
 }
 
-#main h1 {
+#mainRez {
+    width: 90%;
+    background-image: url(../img/banner-1730x685.webp);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 113px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#main h1,
+#mainRez h1 {
     font-size: 80px;
     margin-bottom: 100px;
 }
 
-#main h3 {
+#main h3,
+#tarih h3 {
     font-size: 25px;
 }
 
@@ -58,10 +79,10 @@ a {
     color: bisque;
 }
 
-button {
+.rezBtn {
     border: 4px solid bisque;
     border-radius: 12px;
-    background-color: transparent;
+    background-color: #0e0e0e;
     margin: 25px 0;
     padding: 20px 50px;
     color: bisque;
@@ -69,4 +90,90 @@ button {
     font-weight: 600;
     cursor: pointer;
     font-family: "Playfair Display", serif;
+}
+
+#masabilgi {
+    display: none;
+}
+
+#tarih {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#tarih input {
+    width: 250px;
+    border: 2px solid bisque;
+    border-radius: 10px;
+    outline: none;
+    padding: 20px;
+    background-color: #0e0e0e;
+    color: bisque;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+}
+
+#ileri {
+    width: 150px;
+    border: 2px solid bisque;
+    border-radius: 10px;
+    outline: none;
+    padding: 20px;
+    background-color: #0e0e0e;
+    color: bisque;
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+}
+
+#bilgiler {
+    display: none;
+    /* Başlangıçta gizli */
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#input {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+input::placeholder {
+    color: bisque;
+}
+
+#bilgiler input {
+    width: 250px;
+    border: 2px solid bisque;
+    border-radius: 10px;
+    outline: none;
+    padding: 20px;
+    background-color: #0e0e0e;
+    color: bisque;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+}
+
+#bilgiler h3 {
+    font-size: 25px;
+    color: bisque;
+    font-family: "Playfair Display", serif;
+}
+
+#bilgiler input[type="submit"] {
+    width: 250px;
+    border: 2px solid bisque;
+    border-radius: 10px;
+    outline: none;
+    padding: 20px;
+    background-color: #0e0e0e;
+    color: bisque;
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+    cursor: pointer;
 }
