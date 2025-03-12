@@ -47,7 +47,6 @@ form.addEventListener('submit', function (form) {
             isim: ad.value,
             soyAd: soyAd.value,
             tel: tel.value,
-            // masa: masaNo.value,
         })
 
         localStorage.setItem("rezervasyonlar", JSON.stringify(rezervasyonlar))
@@ -55,4 +54,3 @@ form.addEventListener('submit', function (form) {
     }
 })
 
-// || rezervasyonlar.some(rezervasyon => rezervasyon.masa === masaNo.value)
