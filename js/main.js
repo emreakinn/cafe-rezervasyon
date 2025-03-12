@@ -6,38 +6,53 @@ let tarih = document.querySelector('#tarih')
 let form = document.querySelector('#form')
 let ileri = document.querySelector('#ileri')
 let bilgiler = document.querySelector('#bilgiler')
-let masabilgi = document.querySelector('#masabilgi')
+let date = document.querySelector('#date')
+let rezList = document.querySelector('#rezList')
+let geri = document.querySelector('#geri')
 
 
 let rezervasyonlar = JSON.parse(localStorage.getItem('rezervasyonlar')) || []
 
 ileri.addEventListener('click', function (form) {
     form.preventDefault()
-    if (ad.value === '') {
+    if (date.value === '') {
         alert('hata')
     } else {
         tarih.style.display = 'none'
         bilgiler.style.display = 'flex'
         ileri.style.display = 'none'
+        geri.style.display = 'inline'
 
+    }
+})
+
+geri.addEventListener('click', function (form) {
+    form.preventDefault()
+    if (geri) {
+        tarih.style.display = 'flex'
+        bilgiler.style.display = 'none'
+        ileri.style.display = 'flex'
+        geri.style.display = 'none'
     }
 })
 
 form.addEventListener('submit', function (form) {
     form.preventDefault()
-    if (soyAd.value === '' || tel.value === '' || rezervasyonlar.some(rezervasyon => rezervasyon.masa === masaNo.value)) {
+    if (ad.value === '' || soyAd.value === '' || tel.value === '') {
         alert('hata')
     } else {
         bilgiler.style.display = 'none'
-        masabilgi.style.display = 'inline'
         rezervasyonlar.push({
+            date: date.value,
             isim: ad.value,
             soyAd: soyAd.value,
             tel: tel.value,
-            masa: masaNo.value,
+            // masa: masaNo.value,
         })
-        window.location.href = 'index.html'
-        localStorage.setItem("rezervasyonlar", JSON.stringify(rezervasyonlar))
-    }
 
+        localStorage.setItem("rezervasyonlar", JSON.stringify(rezervasyonlar))
+        window.location.href = 'rezervasyon-takip.html'
+    }
 })
+
+// || rezervasyonlar.some(rezervasyon => rezervasyon.masa === masaNo.value)
