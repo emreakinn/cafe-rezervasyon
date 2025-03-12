@@ -47,6 +47,7 @@ form.addEventListener('submit', function (form) {
             isim: ad.value,
             soyAd: soyAd.value,
             tel: tel.value,
+            masa: masaNo.value,
         })
 
         localStorage.setItem("rezervasyonlar", JSON.stringify(rezervasyonlar))
