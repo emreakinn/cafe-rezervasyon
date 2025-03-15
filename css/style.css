@@ -50,6 +50,17 @@ body {
     align-items: center;
 }
 
+#rezList {
+    width: 90%;
+    background-image: url(../img/banner-1730x685.webp);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #iletisim {
     width: 90%;
     background-image: url(../img/banner-1730x685.webp);
@@ -75,7 +86,8 @@ form {
 }
 
 #mainRez h1,
-#iletisim h1 {
+#iletisim h1,
+#rezList h1 {
     font-size: 80px;
 }
 

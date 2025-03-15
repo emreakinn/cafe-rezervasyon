@@ -8,11 +8,10 @@ let tarih = document.querySelector('#tarih')
 let form = document.querySelector('#form')
 let ileri = document.querySelector('#ileri')
 let bilgiler = document.querySelector('#bilgiler')
-let rezList = document.querySelector('#rezList')
 let geri = document.querySelector('#geri')
 
-let today = new Date().toISOString().split('T')[0]
-date.min = today
+// let today = new Date().toISOString().split('T')[0]
+// date.min = today;
 
 let rezervasyonlar = JSON.parse(localStorage.getItem('rezervasyonlar')) || []
 
@@ -62,4 +61,3 @@ form.addEventListener('submit', function (form) {
         alert('Lütfen Bütün Bilgileri Doldurun')
     }
 })
-
