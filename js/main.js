@@ -10,8 +10,8 @@ let ileri = document.querySelector('#ileri')
 let bilgiler = document.querySelector('#bilgiler')
 let geri = document.querySelector('#geri')
 
-// let today = new Date().toISOString().split('T')[0]
-// date.min = today;
+let today = new Date().toISOString().split('T')[0]
+date.min = today;
 
 let rezervasyonlar = JSON.parse(localStorage.getItem('rezervasyonlar')) || []
 
@@ -47,6 +47,7 @@ form.addEventListener('submit', function (form) {
             alert('Bu masa numarası bu tarihte zaten rezerve edilmiştir.');
         } else {
             rezervasyonlar.push({
+                id: Date.now(),
                 date: date.value,
                 isim: ad.value,
                 soyAd: soyAd.value,

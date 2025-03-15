@@ -25,3 +25,11 @@ tbody tr {
     width: 100%;
     table-layout: fixed;
 }
+
+.rezIptal {
+    background-color: #0e0e0e;
+    color: bisque;
+    border: none;
+    cursor: pointer;
+    font-family: "Playfair Display", serif;
+}
