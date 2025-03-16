@@ -9,6 +9,8 @@ let form = document.querySelector('#form')
 let ileri = document.querySelector('#ileri')
 let bilgiler = document.querySelector('#bilgiler')
 let geri = document.querySelector('#geri')
+let modal = document.querySelector('#modal')
+let rezGör = document.querySelector('#rezGör')
 
 let today = new Date().toISOString().split('T')[0]
 date.min = today;
@@ -56,9 +58,15 @@ form.addEventListener('submit', function (form) {
             });
 
             localStorage.setItem("rezervasyonlar", JSON.stringify(rezervasyonlar));
-            window.location.href = 'rezervasyon-takip.html';
+            modal.style.display = 'flex'
+            // window.location.href = 'rezervasyon-takip.html';
         }
     } else {
         alert('Lütfen Bütün Bilgileri Doldurun')
     }
+})
+
+rezGör.addEventListener('click', function () {
+    modal.style.display = 'none'
+    window.location.href = 'rezervasyon-takip.html';
 })

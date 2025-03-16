@@ -45,3 +45,5 @@ if (rezList) {
     console.error("rezList öğesi bulunamadı.");
 }
 
+
+
