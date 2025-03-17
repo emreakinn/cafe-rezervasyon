@@ -3,6 +3,7 @@
 * {
     margin: 0;
     text-decoration: none;
+    color: bisque;
 }
 
 body {
@@ -13,7 +14,6 @@ body {
     justify-content: center;
     align-items: center;
     font-family: "Playfair Display", serif;
-    color: bisque;
 }
 
 #navbar {
@@ -28,50 +28,6 @@ body {
     align-items: center;
 }
 
-#main {
-    width: 90%;
-    background-image: url(../img/banner-1730x685.webp);
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    padding: 100px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#mainRez {
-    width: 90%;
-    background-image: url(../img/banner-1730x685.webp);
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    padding: 113px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#rezList {
-    width: 90%;
-    background-image: url(../img/banner-1730x685.webp);
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    padding: 57px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#iletisim {
-    position: relative;
-    width: 90%;
-    background-image: url(../img/banner-1730x685.webp);
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    padding: 55px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 form {
     display: flex;
@@ -81,31 +37,10 @@ form {
     gap: 20px;
 }
 
-#main h1 {
-    font-size: 80px;
-    margin-bottom: 100px;
-}
-
 #mainRez h1,
 #iletisim h1,
 #rezList h1 {
     font-size: 80px;
-}
-
-#mainRez #bilgiler h3 {
-    margin-top: 29px;
-    background-color: #0e0e0e;
-}
-
-#mainRez #tarih h3 {
-    margin-top: 98px;
-    background-color: #0e0e0e;
-}
-
-#main h3,
-#tarih h3 {
-    font-size: 25px;
-    background-color: #0e0e0e;
 }
 
 .menu {
@@ -116,26 +51,6 @@ form {
 a {
     font-size: 25px;
     color: bisque;
-}
-
-.rezBtn {
-    border: 4px solid bisque;
-    border-radius: 12px;
-    background-color: #0e0e0e;
-    margin: 25px 0;
-    padding: 20px 50px;
-    color: bisque;
-    font-size: 50px;
-    font-weight: 600;
-    cursor: pointer;
-    font-family: "Playfair Display", serif;
-}
-
-#tarih {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
 }
 
 input {
@@ -154,39 +69,6 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-#ileri {
-    width: 150px;
-    border: 2px solid bisque;
-    border-radius: 10px;
-    outline: none;
-    padding: 20px;
-    background-color: #0e0e0e;
-    color: bisque;
-    font-size: 20px;
-    font-family: "Playfair Display", serif;
-    cursor: pointer;
-}
-
-#geri {
-    width: 250px;
-    border: 2px solid bisque;
-    border-radius: 10px;
-    outline: none;
-    padding: 20px;
-    background-color: #0e0e0e;
-    color: bisque;
-    font-size: 20px;
-    font-family: "Playfair Display", serif;
-    cursor: pointer;
-}
-
-#bilgiler {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
 #input {
     width: 600px;
     display: flex;
@@ -197,69 +79,6 @@ input[type="submit"] {
 
 input::placeholder {
     color: bisque;
-}
-
-#geri {
-    display: none;
-}
-
-#buttons {
-    display: flex;
-    gap: 20px;
-}
-
-#bilgiler input {
-    width: 250px;
-    border: 2px solid bisque;
-    border-radius: 10px;
-    outline: none;
-    padding: 20px;
-    background-color: #0e0e0e;
-    color: bisque;
-    font-family: "Playfair Display", serif;
-    font-size: 20px;
-}
-
-#bilgiler h3 {
-    font-size: 25px;
-    color: bisque;
-    font-family: "Playfair Display", serif;
-}
-
-#bilgiler input[type="submit"] {
-    width: 250px;
-    border: 2px solid bisque;
-    border-radius: 10px;
-    outline: none;
-    padding: 20px;
-    background-color: #0e0e0e;
-    color: bisque;
-    font-size: 20px;
-    font-family: "Playfair Display", serif;
-    cursor: pointer;
-}
-
-#kisiselBilgi {
-    display: flex;
-}
-
-textarea::placeholder {
-    color: bisque;
-    font-size: 18px;
-}
-
-textarea {
-    min-width: 544px;
-    max-width: 544px;
-    min-height: 192px;
-    max-height: 192px;
-    border: 2px solid bisque;
-    border-radius: 10px;
-    padding: 20px;
-    background-color: #0e0e0e;
-    color: bisque;
-    font-size: 18px;
-    font-family: "Playfair Display", serif;
 }
 
 #modal {

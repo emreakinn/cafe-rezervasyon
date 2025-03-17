@@ -59,7 +59,6 @@ form.addEventListener('submit', function (form) {
 
             localStorage.setItem("rezervasyonlar", JSON.stringify(rezervasyonlar));
             modal.style.display = 'flex'
-            // window.location.href = 'rezervasyon-takip.html';
         }
     } else {
         alert('Lütfen Bütün Bilgileri Doldurun')

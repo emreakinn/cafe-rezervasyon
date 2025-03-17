@@ -1,0 +1,34 @@
+#iletisim {
+    position: relative;
+    width: 90%;
+    background-image: url(../img/banner-1730x685.webp);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 55px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#kisiselBilgi {
+    display: flex;
+}
+
+textarea::placeholder {
+    color: bisque;
+    font-size: 18px;
+}
+
+textarea {
+    min-width: 544px;
+    max-width: 544px;
+    min-height: 192px;
+    max-height: 192px;
+    border: 2px solid bisque;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #0e0e0e;
+    color: bisque;
+    font-size: 18px;
+    font-family: "Playfair Display", serif;
+}
