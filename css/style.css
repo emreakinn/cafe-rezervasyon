@@ -6,7 +6,7 @@
     color: bisque;
 }
 
-body {
+.container {
     background-color: #000;
     height: 100vh;
     display: flex;

@@ -6,8 +6,23 @@
     border-bottom-right-radius: 40px;
     padding: 55px 0;
     display: flex;
-    flex-direction: column;
     align-items: center;
+}
+
+#left {
+    width: 50%;
+    background-color: red;
+    text-align: center;
+}
+
+#right {
+    width: 50%;
+    background-color: blue;
+    text-align: center
+}
+
+.socialMedya {
+    display: flex;
 }
 
 #kisiselBilgi {

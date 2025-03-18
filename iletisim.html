@@ -10,38 +10,47 @@
 </head>
 
 <body>
-    <div id="navbar">
-        <a href="index.html"><img src="./img/cafe.png" alt=""></a>
-        <div class="menu">
-            <a href="index.html">Ana Sayfa</a>
-            <a href="rezervasyon.html">Rezervasyon</a>
-            <a href="rezervasyon-takip.html">Rezervasyon Takip</a>
-            <a href="iletisim.html">İletişim</a>
+    <div class="container">
+        <div id="navbar">
+            <a href="index.html"><img src="./img/cafe.png" alt=""></a>
+            <div class="menu">
+                <a href="index.html">Ana Sayfa</a>
+                <a href="rezervasyon.html">Rezervasyon</a>
+                <a href="rezervasyon-takip.html">Rezervasyon Takip</a>
+                <a href="iletisim.html">İletişim</a>
+            </div>
+        </div>
+        <div id="iletisim">
+            <div id="left">
+                <h1>Forum</h1>
+                <form action="" id="iletisimForm">
+                    <div class="kisiselBilgi">
+                        <input type="text" name="" id="isim" placeholder="Adınızı">
+                        <input type="text" name="" id="soyAd" placeholder="Soy Adınıız">
+                    </div>
+                    <div>
+                        <textarea name="" id="yorum" cols="30" rows="8" placeholder="Yazınız..."></textarea>
+                    </div>
+                    <input type="submit" value="Gönder">
+                </form>
+                <!-- modal -->
+                <div id="modal">
+                    <h3>Mesajınız Gönderildi</h3>
+                    <button id="kapat">Kapat</button>
+                </div>
+            </div>
+            <div id="right">
+                <h1>İletişim</h1>
+                <div class="socialMedya">
+                    <img src="./img/instagram.svg" alt="" width="64" height="64">
+                    <img src="./img/whatsapp.svg" alt="" width="64" height="64">
+                    <img src="./img/facebook.svg" alt="" width="64" height="64">
+                    <img src="./img/twitter-x.svg" alt="" width="64" height="64">
+                </div>
+            </div>
+
         </div>
     </div>
-    <div id="iletisim">
-        <h1>İletişim</h1>
-        <form action="" id="iletisimForm">
-            <div class="kisiselBilgi">
-                <input type="text" name="" id="isim" placeholder="Adınızı">
-                <input type="text" name="" id="soyAd" placeholder="Soy Adınıız">
-            </div>
-            <div>
-                <textarea name="" id="yorum" cols="30" rows="8" placeholder="Yazınız..."></textarea>
-            </div>
-            <input type="submit" value="Gönder">
-        </form>
-        <!-- modal -->
-        <div id="modal">
-            <h3>Mesajınız Gönderildi</h3>
-            <button id="kapat">Kapat</button>
-        </div>
-    </div>
-
-
-
-
-
 
 
     <script src="./js/iletisim.js"></script>

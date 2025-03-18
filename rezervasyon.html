@@ -10,42 +10,44 @@
 </head>
 
 <body>
-    <div id="navbar">
-        <a href="index.html"><img src="./img/cafe.png" alt=""></a>
-        <div class="menu">
-            <a href="index.html">Ana Sayfa</a>
-            <a href="rezervasyon.html">Rezervasyon</a>
-            <a href="rezervasyon-takip.html">Rezervasyon Takip</a>
-            <a href="iletisim.html">İletişim</a>
+    <div class="container">
+        <div id="navbar">
+            <a href="index.html"><img src="./img/cafe.png" alt=""></a>
+            <div class="menu">
+                <a href="index.html">Ana Sayfa</a>
+                <a href="rezervasyon.html">Rezervasyon</a>
+                <a href="rezervasyon-takip.html">Rezervasyon Takip</a>
+                <a href="iletisim.html">İletişim</a>
+            </div>
         </div>
-    </div>
-    <div id="mainRez">
-        <h1>Rezervasyon Yap</h1>
-        <form action="" method="post" id="form">
+        <div id="mainRez">
+            <h1>Rezervasyon Yap</h1>
+            <form action="" method="post" id="form">
 
-            <div id="tarih">
-                <h3>REZERVASYON TARİHİ BELİRLE</h3>
-                <input type="date" min="" id="date">
-            </div>
-            <div id="bilgiler">
-                <h3>BİLGİLERİNİZİ GİRİN</h3>
-                <div id="input">
-                    <input type="text" id="ad" placeholder="Ad Gir">
-                    <input type="text" id="soyAd" placeholder="Soy Ad">
-                    <input type="text" id="tel" placeholder="Tel No">
-                    <input type="number" max="15" min="1" id="masaNo" placeholder="Masa No">
+                <div id="tarih">
+                    <h3>REZERVASYON TARİHİ BELİRLE</h3>
+                    <input type="date" min="" id="date">
                 </div>
-                <div id="buttons">
-                    <input type="submit" value="Rezervasyon Yap">
-                    <button id="geri">Geri Dön</button>
+                <div id="bilgiler">
+                    <h3>BİLGİLERİNİZİ GİRİN</h3>
+                    <div id="input">
+                        <input type="text" id="ad" placeholder="Ad Gir">
+                        <input type="text" id="soyAd" placeholder="Soy Ad">
+                        <input type="text" id="tel" placeholder="Tel No">
+                        <input type="number" max="15" min="1" id="masaNo" placeholder="Masa No">
+                    </div>
+                    <div id="buttons">
+                        <input type="submit" value="Rezervasyon Yap">
+                        <button id="geri">Geri Dön</button>
+                    </div>
                 </div>
-            </div>
-            <button id="ileri">Devam Et</button>
+                <button id="ileri">Devam Et</button>
 
-        </form>
-        <div id="modal">
-            <h3>Rezervasyonunuz Oluşturuldu</h3>
-            <button id="rezGör">Rezervasyonları Gör</button>
+            </form>
+            <div id="modal">
+                <h3>Rezervasyonunuz Oluşturuldu</h3>
+                <button id="rezGör">Rezervasyonları Gör</button>
+            </div>
         </div>
     </div>
 
