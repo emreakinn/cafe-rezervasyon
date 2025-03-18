@@ -40,8 +40,13 @@ geri.addEventListener('click', function (form) {
 })
 
 form.addEventListener('submit', function (form) {
-    form.preventDefault()
+    form.preventDefault();
     if (ad.value !== '' && soyAd.value !== '' && tel.value !== '' && masaNo.value !== '') {
+        // Telefon numarasının bir sayı olup olmadığını kontrol et
+        if (isNaN(tel.value)) {
+            alert('Telefon numarası sadece rakamlardan oluşmalıdır!');
+            return; // İşlemi durdur
+        }
         let masaNoRezerveEdilmis = rezervasyonlar.some(function (rezervasyon) {
             return rezervasyon.masa === masaNo.value && rezervasyon.date === date.value;
         });
@@ -58,13 +63,12 @@ form.addEventListener('submit', function (form) {
             });
 
             localStorage.setItem("rezervasyonlar", JSON.stringify(rezervasyonlar));
-            modal.style.display = 'flex'
+            modal.style.display = 'flex';
         }
     } else {
-        alert('Lütfen Bütün Bilgileri Doldurun')
+        alert('Lütfen Bütün Bilgileri Doldurun');
     }
-})
-
+});
 rezGör.addEventListener('click', function () {
     modal.style.display = 'none'
     window.location.href = 'rezervasyon-takip.html';
