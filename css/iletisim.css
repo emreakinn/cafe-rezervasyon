@@ -4,25 +4,65 @@
     background-image: url(../img/banner-1730x685.webp);
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
-    padding: 55px 0;
+    padding: 45px 0;
     display: flex;
     align-items: center;
 }
 
 #left {
     width: 50%;
-    background-color: red;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 #right {
     width: 50%;
-    background-color: blue;
-    text-align: center
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.adres {
+    border: 2px solid bisque;
+    background-color: #0e0e0e;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+#yorumModal {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    gap: 20px;
+    width: 300px;
+    height: 150px;
+    border: 2px solid bisque;
+    border-radius: 12px;
+    background-color: #0e0e0e;
+    top: 294px;
+    left: 280px;
+}
+
+svg {
+    fill: bisque;
+}
+
+iframe {
+    border-radius: 12px;
 }
 
 .socialMedya {
     display: flex;
+    border: 2px solid bisque;
+    border-radius: 8px;
+    background-color: #0e0e0e;
+    padding: 10px 30px;
+    gap: 30px;
 }
 
 #kisiselBilgi {
@@ -46,4 +86,9 @@ textarea {
     color: bisque;
     font-size: 18px;
     font-family: "Playfair Display", serif;
+}
+
+h3 {
+    font-size: 25px;
+    background-color: #0e0e0e;
 }

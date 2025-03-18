@@ -76,3 +76,22 @@
     font-family: "Playfair Display", serif;
     cursor: pointer;
 }
+
+#modal {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    gap: 20px;
+    width: 500px;
+    height: 250px;
+    border: 2px solid bisque;
+    border-radius: 12px;
+    background-color: #0e0e0e;
+    top: 394px;
+}
+
+#modal h3 {
+    font-size: 25px
+}

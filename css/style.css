@@ -81,26 +81,12 @@ input::placeholder {
     color: bisque;
 }
 
-#modal {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    gap: 20px;
-    width: 300px;
-    height: 150px;
-    border: 2px solid bisque;
-    border-radius: 12px;
-    background-color: #0e0e0e;
-    top: 294px;
-}
-
 #kapat,
 #rezGör {
     background-color: transparent;
     border: 2px solid bisque;
-    padding: 5px 20px;
+    padding: 10px 30px;
+    font-size: 20px;
     border-radius: 6px;
     color: bisque;
     cursor: pointer;
