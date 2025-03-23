@@ -19,25 +19,12 @@ function renderTable() {
             <td> ${rezervasyon.soyAd} </td>
             <td> ${rezervasyon.tel} </td>
             <td> ${rezervasyon.masa} </td>
-            <td> <button class="rezIptal" data-id="${rezervasyon.id}"> Rezervasyon İptal </button> </td>
         </tr>
         `;
     });
 
-    document.querySelectorAll(".rezIptal").forEach((btn) => {
-        btn.addEventListener("click", function () {
-            let rezId = this.getAttribute("data-id");
-            rezervasyonSil(rezId);
-        });
-    });
 }
 
-function rezervasyonSil(id) {
-    let rezervasyonData = JSON.parse(localStorage.getItem("rezervasyonlar")) || [];
-    rezervasyonData = rezervasyonData.filter((rez) => rez.id !== Number(id));
-    localStorage.setItem("rezervasyonlar", JSON.stringify(rezervasyonData));
-    renderTable();
-}
 
 if (rezList) {
     renderTable();

@@ -45,7 +45,7 @@ form.addEventListener('submit', function (form) {
         // Telefon numarasının bir sayı olup olmadığını kontrol et
         if (isNaN(tel.value)) {
             alert('Telefon numarası sadece rakamlardan oluşmalıdır!');
-            return; // İşlemi durdur
+            return;
         }
         let masaNoRezerveEdilmis = rezervasyonlar.some(function (rezervasyon) {
             return rezervasyon.masa === masaNo.value && rezervasyon.date === date.value;

@@ -1,0 +1,52 @@
+#adminRezList {
+    width: 90%;
+    background-image: url(../img/banner-1730x685.webp);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 57px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#adminPanel {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+table {
+    margin-top: 50px;
+    width: 40%;
+    border: 4px solid bisque;
+    text-align: center;
+    background-color: #0e0e0e;
+    border-radius: 12px;
+}
+
+tbody {
+    height: 322px;
+    display: block;
+    overflow-y: auto;
+}
+
+thead,
+tbody tr {
+    padding: 2px 0;
+    border-bottom: 2px solid #2e2e2e;
+}
+
+thead,
+tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.rezIptal {
+    background-color: #0e0e0e;
+    color: bisque;
+    border: none;
+    cursor: pointer;
+    font-family: "Playfair Display", serif;
+}
