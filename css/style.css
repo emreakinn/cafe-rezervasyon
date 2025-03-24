@@ -60,13 +60,10 @@ input {
     border-radius: 10px;
     outline: none;
     padding: 20px;
-    background-color: #0e0e0e;
+    background-color: #353535;
     color: bisque;
     font-family: "Playfair Display", serif;
     font-size: 20px;
-}
-
-input[type="submit"] {
     cursor: pointer;
 }
 
@@ -80,15 +77,4 @@ input[type="submit"] {
 
 input::placeholder {
     color: bisque;
-}
-
-#kapat,
-#rezGör {
-    background-color: transparent;
-    border: 2px solid bisque;
-    padding: 10px 30px;
-    font-size: 20px;
-    border-radius: 6px;
-    color: bisque;
-    cursor: pointer;
 }

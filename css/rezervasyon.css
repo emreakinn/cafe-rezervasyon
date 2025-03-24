@@ -21,18 +21,6 @@
     font-size: 25px;
 }
 
-#bilgiler input[type="submit"] {
-    width: 250px;
-    border: 2px solid bisque;
-    border-radius: 10px;
-    outline: none;
-    padding: 20px;
-    background-color: #0e0e0e;
-    font-size: 20px;
-    font-family: "Playfair Display", serif;
-    cursor: pointer;
-}
-
 #tarih {
     display: flex;
     flex-direction: column;
@@ -58,7 +46,7 @@
     border-radius: 10px;
     outline: none;
     padding: 20px;
-    background-color: #0e0e0e;
+    background-color: #353535;
     font-size: 20px;
     font-family: "Playfair Display", serif;
     cursor: pointer;
@@ -71,9 +59,20 @@
     border-radius: 10px;
     outline: none;
     padding: 20px;
-    background-color: #0e0e0e;
+    background-color: #353535;
     font-size: 20px;
     font-family: "Playfair Display", serif;
+    cursor: pointer;
+}
+
+#rezGör {
+    background-color: transparent;
+    border: 2px solid bisque;
+    background: #0e0e0e;
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 6px;
+    color: bisque;
     cursor: pointer;
 }
 

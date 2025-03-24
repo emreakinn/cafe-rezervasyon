@@ -54,8 +54,8 @@ function renderYorumTable() {
     yorumlar.forEach((yorum) => {
         bodyYorum.innerHTML += `
         <tr>
-            <td> ${yorum.isim} ${yorum.soyAd} </td>
-            <td style="text-align: start;" colspan="3"> ${yorum.yorum} </td>
+            <td style="word-wrap: break-word;"> ${yorum.isim} ${yorum.soyAd} </td>
+            <td style="text-align: start; word-wrap:break-word;" colspan="3"> ${yorum.yorum} </td>
         </tr>
         `;
     });

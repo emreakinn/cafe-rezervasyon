@@ -82,10 +82,20 @@ textarea {
     border: 2px solid bisque;
     border-radius: 10px;
     padding: 20px;
-    background-color: #0e0e0e;
+    background-color: #353535;
     color: bisque;
     font-size: 18px;
     font-family: "Playfair Display", serif;
+}
+
+#kapat {
+    background-color: transparent;
+    border: 2px solid bisque;
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 6px;
+    color: bisque;
+    cursor: pointer;
 }
 
 h3 {
