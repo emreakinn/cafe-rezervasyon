@@ -42,9 +42,8 @@ geri.addEventListener('click', function (form) {
 form.addEventListener('submit', function (form) {
     form.preventDefault();
     if (ad.value !== '' && soyAd.value !== '' && tel.value !== '' && masaNo.value !== '') {
-        // Telefon numarasının bir sayı olup olmadığını kontrol et
-        if (isNaN(tel.value)) {
-            alert('Telefon numarası sadece rakamlardan oluşmalıdır!');
+        if (isNaN(tel.value) || tel.value.length !== 10) {
+            alert('Telefon numarası sadece rakamlardan oluşmalıdır ve 10 haneli olmalıdır.');
             return;
         }
         let masaNoRezerveEdilmis = rezervasyonlar.some(function (rezervasyon) {

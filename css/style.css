@@ -39,7 +39,8 @@ form {
 
 #mainRez h1,
 #iletisim h1,
-#rezList h1 {
+#rezList h1,
+#adminRezList h1 {
     font-size: 80px;
 }
 
